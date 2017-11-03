@@ -12,7 +12,7 @@ layer {
     mean_file: "tmp_valentina/object_reco/data/neuro_iCub/train/train_mean.binaryproto"
   }
   data_param {
-    source: "tmp_valentina/object_reco/data/neuro_iCub/train/train_database_lmdb"
+    source: "tmp_valentina/object_reco/data/neuro_iCub/train/train_database"
     batch_size: 256
     backend: LMDB
   }
@@ -30,7 +30,7 @@ layer {
     mean_file: "tmp_valentina/object_reco/data/neuro_iCub/test/test_mean.binaryproto"
   }
   data_param {
-    source: "tmp_valentina/object_reco/data/neuro_iCub/test/test_database/"
+    source: "tmp_valentina/object_reco/data/neuro_iCub/test/test_database"
     batch_size: 50
     backend: LMDB
   }
